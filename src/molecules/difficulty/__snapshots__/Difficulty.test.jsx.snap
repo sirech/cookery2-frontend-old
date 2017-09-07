@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Difficulty renders correctly 1`] = `
+<span
+  className="badge badge-success badge-pill"
+>
+  easy
+</span>
+`;
+
+exports[`components Difficulty renders different difficulties 1`] = `
+<span
+  className="badge badge-warning badge-pill"
+>
+  medium
+</span>
+`;
