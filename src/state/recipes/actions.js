@@ -4,13 +4,13 @@ import { fetch, normalizeRecipes } from '../../rest'
 
 import { REQUEST_RECIPES, RECEIVE_RECIPES } from './constants'
 
-import type { Book } from '../../types'
+import type { RecipeSummary } from '../../types'
 
 const requestRecipes = () => ({
   type: REQUEST_RECIPES
 })
 
-const receiveRecipes = (recipes: Array<Book>) => ({
+const receiveRecipes = (recipes: Array<RecipeSummary>) => ({
   type: RECEIVE_RECIPES,
   payload: recipes
 })

@@ -22,10 +22,6 @@ const fetch = (url: string, opts: Object = {}) => {
   const headers = {...DEFAULT_OPTIONS.headers, ...opts.headers}
   const options = {...DEFAULT_OPTIONS, ...opts, ...{ headers }}
 
-  if (options.method === 'POST' || options.method === 'PUT') {
-    options.headers['X-CSRF-Token'] = document.querySelector('meta[name=csrf-token]').attributes.content.value
-  }
-
   return isoFetch(prepareUrl(url), options)
 }
 
