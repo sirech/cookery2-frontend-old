@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recipes reducer handles RECEIVE_RECIPES 1`] = `
+Object {
+  "entities": Object {
+    "recipes": Object {
+      "1": Object {
+        "difficulty": "easy",
+        "duration": 0,
+        "id": 1,
+        "name": "test name",
+        "servings": 2,
+      },
+      "10": Object {
+        "difficulty": "medium",
+        "duration": 0,
+        "id": 10,
+        "name": "Yeti Imperial Stout",
+        "servings": 2,
+      },
+      "11": Object {
+        "difficulty": "medium",
+        "duration": 93,
+        "id": 11,
+        "name": "Samuel Smith’s Oatmeal Stout",
+        "servings": 6,
+      },
+      "15": Object {
+        "difficulty": "easy",
+        "duration": 0,
+        "id": 15,
+        "name": "my new thing",
+        "servings": 3,
+      },
+      "16": Object {
+        "difficulty": "medium",
+        "duration": 0,
+        "id": 16,
+        "name": "name name name",
+        "servings": 3,
+      },
+      "2": Object {
+        "difficulty": "easy",
+        "duration": 0,
+        "id": 2,
+        "name": "Bell’s Expedition",
+        "servings": 5,
+      },
+      "3": Object {
+        "difficulty": "medium",
+        "duration": 0,
+        "id": 3,
+        "name": "Founders Kentucky Breakfast ",
+        "servings": 2,
+      },
+      "4": Object {
+        "difficulty": "medium",
+        "duration": 0,
+        "id": 4,
+        "name": "Chimay Grande Réserve",
+        "servings": 3,
+      },
+      "5": Object {
+        "difficulty": "difficult",
+        "duration": 0,
+        "id": 5,
+        "name": "Alpha King Pale Ale",
+        "servings": 1,
+      },
+      "6": Object {
+        "difficulty": "easy",
+        "duration": 0,
+        "id": 6,
+        "name": "La Fin Du Monde",
+        "servings": 6,
+      },
+      "7": Object {
+        "difficulty": "difficult",
+        "duration": 0,
+        "id": 7,
+        "name": "Trappistes Rochefort 10",
+        "servings": 1,
+      },
+    },
+  },
+  "result": Array [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    15,
+    16,
+  ],
+}
+`;
+
+exports[`recipes reducer handles REQUEST_RECIPES 1`] = `
+Object {
+  "entities": Object {
+    "recipes": Object {},
+  },
+}
+`;
+
+exports[`recipes reducer returns the initial state 1`] = `
+Object {
+  "entities": Object {
+    "recipes": Object {},
+  },
+}
+`;
