@@ -9,18 +9,10 @@ import Difficulty from '../difficulty'
 import Servings from '../servings'
 import Duration from '../duration'
 
-import type { Difficulty as DifficultyType, Servings as ServingsType } from '../../types'
+import type { RecipeSummary } from '../../types'
 
-type Props = {
-  id: number,
-  name: string,
-  difficulty: DifficultyType,
-  servings: ServingsType,
-  duration: number
-}
-
-const RecipeCard = ({id, name, difficulty, servings, duration}: Props) => (
-  <Col xs='12' sm='6' md='4' lg='3' className='mb-3'>
+const RecipeCard = ({id, name, difficulty, servings, duration}: RecipeSummary) => (
+  <Col xs='12' sm='6' md='4' lg='3' className='mb-3' tag='li'>
     <Card>
       <CardHeader>
         <h4>
