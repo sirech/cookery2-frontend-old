@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Header renders correctly 1`] = `
+<header
+  className="mb-4"
+>
+  <nav
+    className="navbar navbar-toggleable navbar-inverse bg-inverse"
+  >
+    <button
+      className="navbar-toggler navbar-toggler-right"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <a
+      className="navbar-brand"
+      href="/recipes"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Recipes
+    </a>
+    <div
+      className="collapse navbar-collapse"
+      style={Object {}}
+    >
+      <ul
+        className="ml-auto navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="/recipes/new"
+            onClick={[Function]}
+          >
+            Add Recipe
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+`;

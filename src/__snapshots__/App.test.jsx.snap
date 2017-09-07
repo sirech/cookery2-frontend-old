@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components App renders correctly 1`] = `
+<BrowserRouter>
+  <div>
+    <Route
+      exact={true}
+      path="/"
+      render={[Function]}
+    />
+    <Header />
+    <Content />
+  </div>
+</BrowserRouter>
+`;
