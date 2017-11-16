@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 import { createStructuredSelector } from 'reselect'
 import { Row } from 'reactstrap'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import { actions } from '../../state/recipes'
 import recipesSelector from './selectors'

@@ -1,27 +1,27 @@
 {
-  "name": "cookery2",
+  "name": "cookery2-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-beta.2",
     "normalizr": "^3.2.3",
-    "ramda": "^0.24.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "ramda": "^0.25.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.5",
     "react-redux": "^5.0.6",
     "react-router-bootstrap": "^0.24.3",
     "react-router-dom": "^4.2.0",
-    "react-scripts": "1.0.11",
+    "react-scripts": "1.0.17",
     "react-transition-group": "^1.1.3",
-    "reactstrap": "^4.8.0",
+    "reactstrap": "^5.0.0-alpha.3",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3005 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -32,28 +32,36 @@
   "eslintConfig": {
     "extends": ".eslintrc.js"
   },
+  "proxy": "http://localhost:3006",
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "enzyme": "^2.9.1",
+    "coveralls": "^3.0.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-redux": "^0.1.6",
-    "enzyme-to-json": "^1.5.1",
-    "eslint": "^4.5.0",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.11.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-flowtype": "^2.35.0",
-    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.3.2",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "0.52.0",
-    "react-test-renderer": "^15.6.1",
+    "pre-commit": "^1.2.2",
+    "react-test-renderer": "^16.1.1",
     "redux-mock-store": "^1.2.3",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0"
   },
-  "proxy": "http://localhost:3001",
   "stylelint": {
     "extends": "stylelint-config-standard"
-  }
+  },
+  "pre-commit": [
+    "flow",
+    "linter:js",
+    "linter:css"
+  ]
 }

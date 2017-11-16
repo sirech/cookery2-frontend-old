@@ -37,11 +37,11 @@ class Header extends React.Component {
           <meta charSet='utf-8' />
           <title>Cookery</title>
         </Helmet>
-        <Navbar inverse color='inverse' toggleable>
-          <NavbarToggler right onClick={this.toggle} />
+        <Navbar dark color='dark' expand='sm'>
           <LinkContainer to='/recipes' >
             <NavbarBrand>Recipes</NavbarBrand>
           </LinkContainer>
+          <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
