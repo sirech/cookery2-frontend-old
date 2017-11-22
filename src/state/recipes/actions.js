@@ -1,10 +1,10 @@
 // @flow
 
-import { fetch, normalizeRecipes } from '../../rest'
+import { fetch, normalizeRecipes } from 'rest'
 
 import { REQUEST_RECIPES, RECEIVE_RECIPES } from './constants'
 
-import type { RecipeSummary } from '../../types'
+import type { RecipeSummary } from 'types'
 
 const requestRecipes = () => ({
   type: REQUEST_RECIPES

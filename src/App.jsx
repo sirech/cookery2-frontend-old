@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 
 import { Col, Container, Row } from 'reactstrap'
 
-import Header from './molecules/header'
-import RecipesList from './organisms/recipes_list'
+import Header from 'molecules/header'
+import RecipesList from 'organisms/recipes_list'
 
 class App extends Component {
   render () {

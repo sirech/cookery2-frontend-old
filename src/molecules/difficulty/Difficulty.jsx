@@ -3,7 +3,7 @@
 import React from 'react'
 import { Badge } from 'reactstrap'
 
-import type { Difficulty as DifficultyType } from '../../types'
+import type { Difficulty as DifficultyType } from 'types'
 
 const classForLevel = (level: DifficultyType) => {
   switch (level) {

@@ -1,4 +1,4 @@
-import { recipes as recipesState } from '../../__fixtures__'
+import { recipes as recipesState } from 'state/__fixtures__'
 
 import { REQUEST_RECIPES, RECEIVE_RECIPES } from '../constants'
 import recipes from '../reducers'

@@ -7,12 +7,12 @@ import { createStructuredSelector } from 'reselect'
 import { Row } from 'reactstrap'
 import * as R from 'ramda'
 
-import { actions } from '../../state/recipes'
+import { actions } from 'state/recipes'
 import recipesSelector from './selectors'
 
-import RecipeCard from '../../molecules/recipe_card'
+import RecipeCard from 'molecules/recipe_card'
 
-import type { RecipeSummary } from '../../types'
+import type { RecipeSummary } from 'types'
 
 type Props = {
   recipes: Array<RecipeSummary>,

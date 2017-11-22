@@ -1,7 +1,7 @@
 import * as R from 'ramda'
 import { createSelector } from 'reselect'
 
-import { recipesSelector as baseSelector } from '../../state/recipes'
+import { recipesSelector as baseSelector } from 'state/recipes'
 
 const recipesSelector = createSelector(
   baseSelector,

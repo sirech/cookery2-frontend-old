@@ -1,4 +1,4 @@
-import fixtures from '../../__fixtures__'
+import fixtures from 'state/__fixtures__'
 
 import recipesSelector from '../selectors'
 
