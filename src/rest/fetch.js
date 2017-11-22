@@ -4,7 +4,7 @@ import isoFetch from 'isomorphic-fetch'
 
 const testableUrl = (path) => {
   const TESTING = process.env.NODE_ENV === 'test'
-  return `${TESTING ? 'http://localhost' : ''}${path}`
+  return `${TESTING ? 'http://localhost:8989' : ''}${path}`
 }
 
 const prepareUrl = path => testableUrl(`/rest${path}`)
