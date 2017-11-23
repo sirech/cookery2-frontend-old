@@ -15,7 +15,7 @@ const receiveRecipe = (recipe: RecipeDetail) => ({
   payload: recipe
 })
 
-export function fetchRecipe (id: number) {
+export function fetchRecipe (id: number | string) {
   return (dispatch: Dispatch) => {
     dispatch(requestRecipe())
 

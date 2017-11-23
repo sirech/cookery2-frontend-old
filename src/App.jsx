@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import { Col, Container, Row } from 'reactstrap'
 
 import Header from 'molecules/header'
+import RecipeDetail from 'organisms/recipe_detail'
 import RecipesList from 'organisms/recipes_list'
 
 class App extends Component {
@@ -27,6 +28,7 @@ const Content = () => (
     <Row>
       <Col xs='12'>
         <Switch>
+          <Route exact path='/recipes/:id' component={RecipeDetail} />
           <Route exact path='/recipes' component={RecipesList} />
         </Switch>
       </Col>
