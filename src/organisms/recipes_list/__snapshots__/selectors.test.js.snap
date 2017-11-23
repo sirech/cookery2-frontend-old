@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recipesSelector orders the books as categories 1`] = `
+Array [
+  Object {
+    "difficulty": "difficult",
+    "duration": 0,
+    "id": 5,
+    "name": "Alpha King Pale Ale",
+    "servings": 1,
+  },
+  Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "id": 2,
+    "name": "Bell’s Expedition",
+    "servings": 5,
+  },
+  Object {
+    "difficulty": "medium",
+    "duration": 0,
+    "id": 4,
+    "name": "Chimay Grande Réserve",
+    "servings": 3,
+  },
+  Object {
+    "difficulty": "medium",
+    "duration": 0,
+    "id": 3,
+    "name": "Founders Kentucky Breakfast ",
+    "servings": 2,
+  },
+  Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "id": 6,
+    "name": "La Fin Du Monde",
+    "servings": 6,
+  },
+  Object {
+    "difficulty": "medium",
+    "duration": 93,
+    "id": 11,
+    "name": "Samuel Smith’s Oatmeal Stout",
+    "servings": 6,
+  },
+  Object {
+    "difficulty": "difficult",
+    "duration": 0,
+    "id": 7,
+    "name": "Trappistes Rochefort 10",
+    "servings": 1,
+  },
+  Object {
+    "difficulty": "medium",
+    "duration": 0,
+    "id": 10,
+    "name": "Yeti Imperial Stout",
+    "servings": 2,
+  },
+  Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "id": 15,
+    "name": "my new thing",
+    "servings": 3,
+  },
+  Object {
+    "difficulty": "medium",
+    "duration": 0,
+    "id": 16,
+    "name": "name name name",
+    "servings": 3,
+  },
+  Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "id": 1,
+    "name": "test name",
+    "servings": 2,
+  },
+]
+`;
