@@ -11,6 +11,18 @@ export type RecipeSummary = {
   duration: number
 }
 
+export type QuantityUnit = 'pinch' | 'cup' | 'teaspoon' | 'tablespoon' | 'ml' | 'gr' | 'piece'
+
+type SimpleStep = { isRecipe: false, description: string }
+type ReferenceStep = { isRecipe: true, id: number, name: string }
+export type Step = SimpleStep | ReferenceStep
+
+export type RecipeDetail = {
+  quantities: Array<{ name: string, unit: QuantityUnit, amount: number }>,
+  steps: Array<Step>,
+  ...RecipeSummary
+}
+
 // State
 
 type Result = Array<number>

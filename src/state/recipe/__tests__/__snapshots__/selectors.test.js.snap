@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recipes list selectors recipesSelector selects the recipes 1`] = `
+Object {
+  "difficulty": "easy",
+  "duration": 0,
+  "id": 1,
+  "name": "test name",
+  "quantities": Array [
+    Object {
+      "amount": 50,
+      "name": "sugar",
+      "unit": "gr",
+    },
+    Object {
+      "amount": 1000,
+      "name": "water",
+      "unit": "ml",
+    },
+    Object {
+      "amount": 2,
+      "name": "salt",
+      "unit": "pinch",
+    },
+  ],
+  "servings": 2,
+  "steps": Array [
+    Object {
+      "description": "Mix all the ingredients",
+      "isRecipe": false,
+    },
+    Object {
+      "id": 69,
+      "isRecipe": true,
+      "name": "Other",
+    },
+  ],
+}
+`;
