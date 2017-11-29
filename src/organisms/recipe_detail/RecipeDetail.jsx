@@ -6,7 +6,10 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import * as R from 'ramda'
 
+import { Row } from 'reactstrap'
+
 import RecipeHeader from 'molecules/recipe_header'
+import Quantities from 'molecules/quantities'
 
 import { actions, recipeSelector } from 'state/recipe'
 
@@ -47,7 +50,10 @@ class RecipeDetail extends React.Component {
     const { recipe } = this.props
 
     return (
-      <RecipeHeader {...recipe} />
+      <Row>
+        <RecipeHeader {...recipe} />
+        <Quantities items={recipe.quantities} />
+      </Row>
     )
   }
 }

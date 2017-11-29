@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Quantity renders correctly 1`] = `
+<div>
+  <span
+    className="text-capitalize"
+  >
+    Olive oil
+  </span>
+  <span
+    className="font-italic float-right"
+  >
+    50 ml
+  </span>
+</div>
+`;

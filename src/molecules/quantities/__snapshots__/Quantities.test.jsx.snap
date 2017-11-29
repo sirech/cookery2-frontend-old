@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Quantities renders correctly 1`] = `
+<div
+  className="mb-3 col-12 col-lg-6"
+>
+  <div
+    className="card"
+  >
+    <ul
+      className="list-group list-group-flush"
+    >
+      <li
+        className="quantity list-group-item"
+      >
+        <div>
+          <span
+            className="text-capitalize"
+          >
+            sugar
+          </span>
+          <span
+            className="font-italic float-right"
+          >
+            50 gr
+          </span>
+        </div>
+      </li>
+      <li
+        className="quantity list-group-item"
+      >
+        <div>
+          <span
+            className="text-capitalize"
+          >
+            water
+          </span>
+          <span
+            className="font-italic float-right"
+          >
+            1000 ml
+          </span>
+        </div>
+      </li>
+      <li
+        className="quantity list-group-item"
+      >
+        <div>
+          <span
+            className="text-capitalize"
+          >
+            salt
+          </span>
+          <span
+            className="font-italic float-right"
+          >
+            2 pinch
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

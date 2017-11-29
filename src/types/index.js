@@ -12,13 +12,14 @@ export type RecipeSummary = {
 }
 
 export type QuantityUnit = 'pinch' | 'cup' | 'teaspoon' | 'tablespoon' | 'ml' | 'gr' | 'piece'
+export type Quantity = { name: string, unit: QuantityUnit, amount: number }
 
 type SimpleStep = { isRecipe: false, description: string }
 type ReferenceStep = { isRecipe: true, id: number, name: string }
 export type Step = SimpleStep | ReferenceStep
 
 export type RecipeDetail = {
-  quantities: Array<{ name: string, unit: QuantityUnit, amount: number }>,
+  quantities: Array<Quantity>,
   steps: Array<Step>,
   ...RecipeSummary
 }

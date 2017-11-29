@@ -1,0 +1,7 @@
+.quantity:not(:first-child) {
+  border-top: 1px solid #eceeef;
+}
+
+.quantity:nth-of-type(even) {
+  background-color: rgba(85, 211, 255, 0.05);
+}
