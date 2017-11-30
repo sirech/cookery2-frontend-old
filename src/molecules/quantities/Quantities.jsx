@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { Col, Card, ListGroup, ListGroupItem } from 'reactstrap'
+import { Col, Card, CardHeader, ListGroup, ListGroupItem } from 'reactstrap'
 
 import Quantity from 'atoms/quantity'
 
@@ -19,6 +19,9 @@ const renderQuantity = (quantity: QuantityType) => (
 const Quantities = ({ items }: { items: Array<QuantityType> }) => (
   <Col xs='12' lg='6' className='mb-3'>
     <Card>
+      <CardHeader>
+        <h6>Quantities</h6>
+      </CardHeader>
       <ListGroup flush>
         {items.map(quantity => renderQuantity(quantity))}
       </ListGroup>

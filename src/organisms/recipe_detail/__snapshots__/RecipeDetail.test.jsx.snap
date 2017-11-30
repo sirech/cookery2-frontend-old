@@ -92,6 +92,13 @@ exports[`components RecipeDetail renders correctly 1`] = `
     <div
       className="card"
     >
+      <div
+        className="card-header"
+      >
+        <h6>
+          Quantities
+        </h6>
+      </div>
       <ul
         className="list-group list-group-flush"
       >
@@ -155,9 +162,9 @@ exports[`components RecipeDetail renders correctly 1`] = `
       <div
         className="card-header"
       >
-        <h4>
+        <h6>
           Steps
-        </h4>
+        </h6>
       </div>
       <ul
         className="list-group list-group-flush"

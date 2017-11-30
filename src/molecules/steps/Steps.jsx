@@ -19,7 +19,7 @@ const Steps = ({ items }: { items: Array<StepType> }) => (
   <Col xs='12' lg='6' className='mb-3'>
     <Card>
       <CardHeader>
-        <h4>Steps</h4>
+        <h6>Steps</h6>
       </CardHeader>
       <ListGroup flush>
         {items.map(step => renderStep(step))}
