@@ -2,85 +2,191 @@
 
 exports[`components RecipeDetail renders correctly 1`] = `
 <div
-  className="col-12"
+  className="row"
 >
   <div
-    className="card"
+    className="mb-3 col-12"
   >
     <div
-      className="card-header"
+      className="card"
     >
-      <h4>
-        test name
-      </h4>
-    </div>
-    <ul
-      className="list-group list-group-flush"
-    >
-      <li
-        className="list-group-item"
+      <div
+        className="card-header"
       >
-        <span
-          className="badge badge-success badge-pill"
+        <h4>
+          test name
+        </h4>
+      </div>
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="list-group-item"
         >
-          easy
-        </span>
-      </li>
-      <li
-        className="list-group-item"
-      >
-        <span>
-          <svg
-            className="mr-1"
-            fill="currentColor"
-            height="1em"
-            preserveAspectRatio="xMidYMid meet"
-            style={
-              Object {
-                "color": undefined,
-                "verticalAlign": "middle",
-              }
-            }
-            viewBox="0 0 40 40"
-            width="1em"
+          <span
+            className="badge badge-success badge-pill"
           >
-            <g>
-              <path
-                d="m18.8 1.4v14.3q0 1.4-0.8 2.5t-2.1 1.6v17.3q0 1.2-0.8 2.1t-2 0.8h-2.9q-1.1 0-2-0.8t-0.8-2.1v-17.3q-1.3-0.5-2.1-1.6t-0.8-2.5v-14.3q0-0.6 0.4-1t1-0.4 1 0.4 0.5 1v9.3q0 0.6 0.4 1t1 0.4 1-0.4 0.4-1v-9.3q0-0.6 0.4-1t1-0.4 1 0.4 0.5 1v9.3q0 0.6 0.4 1t1 0.4 1-0.4 0.4-1v-9.3q0-0.6 0.4-1t1.1-0.4 1 0.4 0.4 1z m17.1 0v35.7q0 1.2-0.8 2.1t-2 0.8h-2.9q-1.1 0-2-0.8t-0.8-2.1v-11.4h-5q-0.3 0-0.5-0.2t-0.3-0.5v-17.9q0-2.9 2.1-5t5.1-2.1h5.7q0.6 0 1 0.4t0.4 1z"
-              />
-            </g>
-          </svg>
-          2
-        </span>
-      </li>
-      <li
-        className="list-group-item"
-      >
-        <span>
-          <svg
-            className="mr-1"
-            fill="currentColor"
-            height="1em"
-            preserveAspectRatio="xMidYMid meet"
-            style={
-              Object {
-                "color": undefined,
-                "verticalAlign": "middle",
+            easy
+          </span>
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span>
+            <svg
+              className="mr-1"
+              fill="currentColor"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              style={
+                Object {
+                  "color": undefined,
+                  "verticalAlign": "middle",
+                }
               }
-            }
-            viewBox="0 0 40 40"
-            width="1em"
-          >
-            <g>
-              <path
-                d="m23 12.1v10q0 0.4-0.2 0.6t-0.5 0.2h-7.2q-0.3 0-0.5-0.2t-0.2-0.6v-1.4q0-0.3 0.2-0.5t0.5-0.2h5v-7.9q0-0.3 0.2-0.5t0.6-0.2h1.4q0.3 0 0.5 0.2t0.2 0.5z m9.3 7.9q0-3.3-1.6-6.1t-4.5-4.4-6.1-1.6-6.1 1.6-4.4 4.4-1.6 6.1 1.6 6.1 4.4 4.4 6.1 1.6 6.1-1.6 4.5-4.4 1.6-6.1z m5 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"
-              />
-            </g>
-          </svg>
-          0 minutes
-        </span>
-      </li>
-    </ul>
+              viewBox="0 0 40 40"
+              width="1em"
+            >
+              <g>
+                <path
+                  d="m18.8 1.4v14.3q0 1.4-0.8 2.5t-2.1 1.6v17.3q0 1.2-0.8 2.1t-2 0.8h-2.9q-1.1 0-2-0.8t-0.8-2.1v-17.3q-1.3-0.5-2.1-1.6t-0.8-2.5v-14.3q0-0.6 0.4-1t1-0.4 1 0.4 0.5 1v9.3q0 0.6 0.4 1t1 0.4 1-0.4 0.4-1v-9.3q0-0.6 0.4-1t1-0.4 1 0.4 0.5 1v9.3q0 0.6 0.4 1t1 0.4 1-0.4 0.4-1v-9.3q0-0.6 0.4-1t1.1-0.4 1 0.4 0.4 1z m17.1 0v35.7q0 1.2-0.8 2.1t-2 0.8h-2.9q-1.1 0-2-0.8t-0.8-2.1v-11.4h-5q-0.3 0-0.5-0.2t-0.3-0.5v-17.9q0-2.9 2.1-5t5.1-2.1h5.7q0.6 0 1 0.4t0.4 1z"
+                />
+              </g>
+            </svg>
+            2
+          </span>
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span>
+            <svg
+              className="mr-1"
+              fill="currentColor"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              style={
+                Object {
+                  "color": undefined,
+                  "verticalAlign": "middle",
+                }
+              }
+              viewBox="0 0 40 40"
+              width="1em"
+            >
+              <g>
+                <path
+                  d="m23 12.1v10q0 0.4-0.2 0.6t-0.5 0.2h-7.2q-0.3 0-0.5-0.2t-0.2-0.6v-1.4q0-0.3 0.2-0.5t0.5-0.2h5v-7.9q0-0.3 0.2-0.5t0.6-0.2h1.4q0.3 0 0.5 0.2t0.2 0.5z m9.3 7.9q0-3.3-1.6-6.1t-4.5-4.4-6.1-1.6-6.1 1.6-4.4 4.4-1.6 6.1 1.6 6.1 4.4 4.4 6.1 1.6 6.1-1.6 4.5-4.4 1.6-6.1z m5 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"
+                />
+              </g>
+            </svg>
+            0 minutes
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="mb-3 col-12 col-lg-6"
+  >
+    <div
+      className="card"
+    >
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="quantity list-group-item"
+        >
+          <div>
+            <span
+              className="text-capitalize"
+            >
+              sugar
+            </span>
+            <span
+              className="font-italic float-right"
+            >
+              50 gr
+            </span>
+          </div>
+        </li>
+        <li
+          className="quantity list-group-item"
+        >
+          <div>
+            <span
+              className="text-capitalize"
+            >
+              water
+            </span>
+            <span
+              className="font-italic float-right"
+            >
+              1000 ml
+            </span>
+          </div>
+        </li>
+        <li
+          className="quantity list-group-item"
+        >
+          <div>
+            <span
+              className="text-capitalize"
+            >
+              salt
+            </span>
+            <span
+              className="font-italic float-right"
+            >
+              2 pinch
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="mb-3 col-12 col-lg-6"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header"
+      >
+        <h4>
+          Steps
+        </h4>
+      </div>
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="step list-group-item"
+        >
+          <span>
+            <div>
+              <span>
+                Mix all the ingredients
+              </span>
+            </div>
+          </span>
+        </li>
+        <li
+          className="step list-group-item"
+        >
+          <span>
+            <a
+              href="/recipes/69"
+              onClick={[Function]}
+            >
+              Other
+            </a>
+          </span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 `;

@@ -14,8 +14,8 @@ export type RecipeSummary = {
 export type QuantityUnit = 'pinch' | 'cup' | 'teaspoon' | 'tablespoon' | 'ml' | 'gr' | 'piece'
 export type Quantity = { name: string, unit: QuantityUnit, amount: number }
 
-type SimpleStep = { isRecipe: false, description: string }
-type ReferenceStep = { isRecipe: true, id: number, name: string }
+export type SimpleStep = { isRecipe: false, description: string }
+export type ReferenceStep = { isRecipe: true, id: number, name: string }
 export type Step = SimpleStep | ReferenceStep
 
 export type RecipeDetail = {

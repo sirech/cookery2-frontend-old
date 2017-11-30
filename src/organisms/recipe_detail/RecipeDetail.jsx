@@ -10,6 +10,7 @@ import { Row } from 'reactstrap'
 
 import RecipeHeader from 'molecules/recipe_header'
 import Quantities from 'molecules/quantities'
+import Steps from 'molecules/steps'
 
 import { actions, recipeSelector } from 'state/recipe'
 
@@ -53,6 +54,7 @@ class RecipeDetail extends React.Component {
       <Row>
         <RecipeHeader {...recipe} />
         <Quantities items={recipe.quantities} />
+        <Steps items={recipe.steps} />
       </Row>
     )
   }

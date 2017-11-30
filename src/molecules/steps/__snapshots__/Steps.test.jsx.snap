@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Steps renders correctly 1`] = `
+<div
+  className="mb-3 col-12 col-lg-6"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-header"
+    >
+      <h4>
+        Steps
+      </h4>
+    </div>
+    <ul
+      className="list-group list-group-flush"
+    >
+      <li
+        className="step list-group-item"
+      >
+        <span>
+          <div>
+            <span>
+              Mix all the ingredients
+            </span>
+          </div>
+        </span>
+      </li>
+      <li
+        className="step list-group-item"
+      >
+        <span>
+          <a
+            href="/recipes/69"
+            onClick={[Function]}
+          >
+            Other
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Step renders correctly for reference steps 1`] = `
+<span>
+  <a
+    href="/recipes/3"
+    onClick={[Function]}
+  >
+    name of the step
+  </a>
+</span>
+`;
+
+exports[`components Step renders correctly for simple steps 1`] = `
+<span>
+  <div>
+    <span>
+      This is just a step
+    </span>
+  </div>
+</span>
+`;

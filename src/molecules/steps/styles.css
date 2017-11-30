@@ -1,0 +1,19 @@
+.step {
+  counter-increment: step_counter;
+}
+
+.step > span {
+  display: flex;
+}
+
+.step > span::before {
+  align-self: center;
+  border: 2px solid #17a2b8;
+  border-radius: 20px;
+  color: #17a2b8;
+  content: counter(step_counter);
+  height: 32px;
+  margin-right: 1rem;
+  text-align: center;
+  width: 32px;
+}
