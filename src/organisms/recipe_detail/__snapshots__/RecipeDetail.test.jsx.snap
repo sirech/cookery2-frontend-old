@@ -114,7 +114,7 @@ exports[`components RecipeDetail renders correctly 1`] = `
             <span
               className="font-italic float-right"
             >
-              50 gr
+              50 grs
             </span>
           </div>
         </li>
@@ -130,7 +130,7 @@ exports[`components RecipeDetail renders correctly 1`] = `
             <span
               className="font-italic float-right"
             >
-              1000 ml
+              1000 mls
             </span>
           </div>
         </li>
@@ -146,7 +146,7 @@ exports[`components RecipeDetail renders correctly 1`] = `
             <span
               className="font-italic float-right"
             >
-              2 pinch
+              1 pinch
             </span>
           </div>
         </li>
@@ -185,10 +185,10 @@ exports[`components RecipeDetail renders correctly 1`] = `
         >
           <span>
             <a
-              href="/recipes/69"
+              href="/recipes/16"
               onClick={[Function]}
             >
-              Other
+              name name name
             </a>
           </span>
         </li>

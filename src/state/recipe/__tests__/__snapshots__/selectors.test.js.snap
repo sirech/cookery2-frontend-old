@@ -10,15 +10,15 @@ Object {
     Object {
       "amount": 50,
       "name": "sugar",
-      "unit": "gr",
+      "unit": "grs",
     },
     Object {
       "amount": 1000,
       "name": "water",
-      "unit": "ml",
+      "unit": "mls",
     },
     Object {
-      "amount": 2,
+      "amount": 1,
       "name": "salt",
       "unit": "pinch",
     },
@@ -30,9 +30,9 @@ Object {
       "isRecipe": false,
     },
     Object {
-      "id": 69,
+      "id": 16,
       "isRecipe": true,
-      "name": "Other",
+      "name": "name name name",
     },
   ],
 }

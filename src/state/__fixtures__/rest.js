@@ -80,13 +80,13 @@ export const recipes = [
 
 export const recipe = {
   quantities: [
-    { name: 'sugar', unit: 'gr', amount: 50 },
-    { name: 'water', unit: 'ml', amount: 1000 },
-    { name: 'salt', unit: 'pinch', amount: 2 }
+    { name: 'sugar', unit: 'grs', amount: 50 },
+    { name: 'water', unit: 'mls', amount: 1000 },
+    { name: 'salt', unit: 'pinch', amount: 1 }
   ],
   steps: [
     { isRecipe: false, description: 'Mix all the ingredients' },
-    { isRecipe: true, id: 69, name: 'Other' }
+    { isRecipe: true, id: 16, name: 'name name name' }
   ],
   ...recipes[0]
 }

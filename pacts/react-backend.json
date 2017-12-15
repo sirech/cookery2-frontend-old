@@ -125,18 +125,18 @@
           "quantities": [
             {
               "name": "sugar",
-              "unit": "gr",
+              "unit": "grs",
               "amount": 50
             },
             {
               "name": "water",
-              "unit": "ml",
+              "unit": "mls",
               "amount": 1000
             },
             {
               "name": "salt",
               "unit": "pinch",
-              "amount": 2
+              "amount": 1
             }
           ],
           "steps": [
@@ -146,8 +146,8 @@
             },
             {
               "isRecipe": true,
-              "id": 69,
-              "name": "Other"
+              "id": 16,
+              "name": "name name name"
             }
           ],
           "id": 1,

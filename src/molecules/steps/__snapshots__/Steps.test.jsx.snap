@@ -33,10 +33,10 @@ exports[`components Steps renders correctly 1`] = `
       >
         <span>
           <a
-            href="/recipes/69"
+            href="/recipes/16"
             onClick={[Function]}
           >
-            Other
+            name name name
           </a>
         </span>
       </li>
