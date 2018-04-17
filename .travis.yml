@@ -13,7 +13,7 @@ stages:
 - lint
 - test
 - name: docker
-  if: branch = master
+  if: branch = master AND env(TRAVIS_PULL_REQUEST) = false
 jobs:
   include:
   - stage: flow
