@@ -12,8 +12,8 @@
   border-radius: 20px;
   color: #17a2b8;
   content: counter(step_counter);
-  height: 32px;
+  height: 2rem;
   margin-right: 1rem;
   text-align: center;
-  width: 32px;
+  width: 2rem;
 }

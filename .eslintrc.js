@@ -2,19 +2,20 @@ module.exports = {
   env: {
     es6: true,
     mocha: true,
-    "jest/globals": true
+    'jest/globals': true,
   },
-  "extends": [
-    "standard",
-    "standard-react",
-    "plugin:flowtype/recommended"
+  extends: [
+    'standard',
+    'standard-react',
+    'plugin:flowtype/recommended',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react',
+    'prettier/standard',
   ],
-  "plugins": [
-    "jest",
-    "flowtype"
-  ],
-  "globals": {
-    "URL": true,
-    "fetch": true
-  }
+  plugins: ['jest', 'flowtype'],
+  globals: {
+    fetch: true,
+    localStorage: true,
+  },
 }

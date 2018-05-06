@@ -1,0 +1,33 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "rules": {
+    "function-url-quotes": "always",
+    "string-quotes": "single",
+
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+
+    "color-named": "never",
+    "declaration-no-important": true,
+    "declaration-property-unit-whitelist": {
+      "font-size": ["rem"],
+      "width": ["rem", "%"],
+      "height": ["rem", "%"],
+      "/^margin": ["rem"],
+      "/^padding": ["rem"]
+    },
+
+    "unit-blacklist": ["em"],
+
+    "order/order": ["custom-properties", "dollar-variables", "declarations", "rules", "at-rules"],
+    "order/properties-alphabetical-order": true,
+    "plugin/declaration-block-no-ignored-properties": true
+  }
+}
