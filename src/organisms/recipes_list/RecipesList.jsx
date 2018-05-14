@@ -19,9 +19,7 @@ type Props = {
   fetchRecipes: void => void,
 }
 
-class RecipesList extends React.Component {
-  props: Props
-
+class RecipesList extends React.Component<Props> {
   componentDidMount() {
     this.props.fetchRecipes()
   }

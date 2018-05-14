@@ -22,9 +22,8 @@ type Props = {
   fetchRecipe: string => void,
 }
 
-class RecipeDetail extends React.Component {
+class RecipeDetail extends React.Component<Props> {
   static defaultProps: Props
-  props: Props
 
   static getId(props) {
     return R.path(['match', 'params', 'id'], props)

@@ -18,7 +18,9 @@ type State = {
   isOpen: boolean,
 }
 
-class Header extends React.Component {
+type Props = {}
+
+class Header extends React.Component<Props> {
   state: State
   toggle: Function
 
