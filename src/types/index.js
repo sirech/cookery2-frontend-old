@@ -3,13 +3,14 @@
 export type Difficulty = 'easy' | 'medium' | 'difficult'
 export type Servings = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-export type RecipeSummary = {
+export type RecipeForm = {
   id: number,
   name: string,
   difficulty: Difficulty,
   servings: Servings,
   duration: number,
 }
+export type RecipeSummary = RecipeForm & { id: number }
 
 export type QuantityUnit =
   | 'pinch'

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors fieldSelectorBuilder selects a concrete field 1`] = `
+Object {
+  "errors": Object {},
+  "focus": false,
+  "initialValue": "",
+  "intents": Array [],
+  "model": "form.recipe.name",
+  "pending": false,
+  "pristine": true,
+  "retouched": false,
+  "submitFailed": false,
+  "submitted": false,
+  "touched": false,
+  "valid": true,
+  "validated": false,
+  "validating": false,
+  "validity": Object {},
+  "value": "",
+}
+`;
+
+exports[`selectors formSelector selects the form 1`] = `
+Object {
+  "errors": Object {},
+  "focus": false,
+  "initialValue": Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "name": "",
+    "servings": 1,
+  },
+  "intents": Array [],
+  "model": "form.recipe",
+  "pending": false,
+  "pristine": true,
+  "retouched": false,
+  "submitFailed": false,
+  "submitted": false,
+  "touched": false,
+  "valid": true,
+  "validated": false,
+  "validating": false,
+  "validity": Object {},
+  "value": Object {
+    "difficulty": "easy",
+    "duration": 0,
+    "name": "",
+    "servings": 1,
+  },
+}
+`;
+
+exports[`selectors recipeSelector selects the form 1`] = `
+Object {
+  "difficulty": "easy",
+  "duration": 0,
+  "name": "",
+  "servings": 1,
+}
+`;
