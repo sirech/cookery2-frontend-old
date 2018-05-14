@@ -28,7 +28,7 @@
     "flow": "flow",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|scss)\"",
     "linter:js": "node_modules/.bin/eslint src --ext jsx --ext js",
-    "linter:css": "node_modules/.bin/stylelint src/**/*.css"
+    "linter:css": "node_modules/.bin/stylelint \"src/**/*.css\""
   },
   "eslintConfig": {
     "extends": ".eslintrc.js"
