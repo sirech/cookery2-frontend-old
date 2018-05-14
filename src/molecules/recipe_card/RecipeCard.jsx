@@ -11,8 +11,14 @@ import Duration from 'molecules/duration'
 
 import type { RecipeSummary } from 'types'
 
-const RecipeCard = ({id, name, difficulty, servings, duration}: RecipeSummary) => (
-  <Col xs='12' sm='6' md='4' lg='3' className='mb-3' tag='li'>
+const RecipeCard = ({
+  id,
+  name,
+  difficulty,
+  servings,
+  duration,
+}: RecipeSummary) => (
+  <Col xs="12" sm="6" md="4" lg="3" className="mb-3" tag="li">
     <Card>
       <CardHeader>
         <h4>

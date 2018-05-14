@@ -16,7 +16,7 @@ const classForLevel = (level: DifficultyType) => {
   }
 }
 
-const Difficulty = ({level}: { level: DifficultyType }) => (
+const Difficulty = ({ level }: { level: DifficultyType }) => (
   <Badge pill color={classForLevel(level)}>
     {level}
   </Badge>

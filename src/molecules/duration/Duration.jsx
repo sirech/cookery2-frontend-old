@@ -4,7 +4,7 @@ import React from 'react'
 
 import ClockIcon from 'react-icons/lib/fa/clock-o'
 
-const readableDuration = (duration) => {
+const readableDuration = duration => {
   if (duration < 60) {
     return `${duration} minutes`
   }
@@ -18,9 +18,9 @@ const readableDuration = (duration) => {
   return `${hours}`
 }
 
-const Duration = ({number}: { number: number }) => (
+const Duration = ({ number }: { number: number }) => (
   <span>
-    <ClockIcon className='mr-1' />
+    <ClockIcon className="mr-1" />
     {readableDuration(number)}
   </span>
 )

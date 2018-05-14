@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom'
 
 import { Col, Container, Row } from 'reactstrap'
 
@@ -8,13 +13,11 @@ import RecipeDetail from 'organisms/recipe_detail'
 import RecipesList from 'organisms/recipes_list'
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <Router>
         <div>
-          <Route exact path='/' render={() => (
-            <Redirect to='/recipes' />
-          )} />
+          <Route exact path="/" render={() => <Redirect to="/recipes" />} />
           <Header />
           <Content />
         </div>
@@ -26,10 +29,10 @@ class App extends Component {
 const Content = () => (
   <Container fluid>
     <Row>
-      <Col xs='12'>
+      <Col xs="12">
         <Switch>
-          <Route exact path='/recipes/:id' component={RecipeDetail} />
-          <Route exact path='/recipes' component={RecipesList} />
+          <Route exact path="/recipes/:id" component={RecipeDetail} />
+          <Route exact path="/recipes" component={RecipesList} />
         </Switch>
       </Col>
     </Row>

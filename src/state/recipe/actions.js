@@ -7,15 +7,15 @@ import { REQUEST_RECIPE, RECEIVE_RECIPE } from './constants'
 import type { RecipeDetail } from 'types'
 
 const requestRecipe = () => ({
-  type: REQUEST_RECIPE
+  type: REQUEST_RECIPE,
 })
 
 const receiveRecipe = (recipe: RecipeDetail) => ({
   type: RECEIVE_RECIPE,
-  payload: recipe
+  payload: recipe,
 })
 
-export function fetchRecipe (id: number | string) {
+export function fetchRecipe(id: number | string) {
   return (dispatch: Dispatch) => {
     dispatch(requestRecipe())
 

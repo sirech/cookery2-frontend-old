@@ -12,14 +12,14 @@ const renderSimpleStep = ({ description }: Object) => (
 )
 
 const renderReferenceStep = ({ id, name }: Object) => (
-  <Link to={`/recipes/${id}`}>
-    {name}
-  </Link>
+  <Link to={`/recipes/${id}`}>{name}</Link>
 )
 
 const Step = (props: Object) => (
   <span>
-    {props.isRecipe ? renderReferenceStep(R.pick(['name', 'id'])(props)) : renderSimpleStep(R.pick(['description'])(props))}
+    {props.isRecipe
+      ? renderReferenceStep(R.pick(['name', 'id'])(props))
+      : renderSimpleStep(R.pick(['description'])(props))}
   </span>
 )
 

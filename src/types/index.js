@@ -8,10 +8,17 @@ export type RecipeSummary = {
   name: string,
   difficulty: Difficulty,
   servings: Servings,
-  duration: number
+  duration: number,
 }
 
-export type QuantityUnit = 'pinch' | 'cup' | 'teaspoon' | 'tablespoon' | 'ml' | 'gr' | 'piece'
+export type QuantityUnit =
+  | 'pinch'
+  | 'cup'
+  | 'teaspoon'
+  | 'tablespoon'
+  | 'ml'
+  | 'gr'
+  | 'piece'
 export type Quantity = { name: string, unit: QuantityUnit, amount: number }
 
 export type SimpleStep = { isRecipe: false, description: string }
@@ -21,7 +28,7 @@ export type Step = SimpleStep | ReferenceStep
 export type RecipeDetail = {
   quantities: Array<Quantity>,
   steps: Array<Step>,
-  ...RecipeSummary
+  ...RecipeSummary,
 }
 
 // State
@@ -30,5 +37,5 @@ type Result = Array<number>
 
 export type NormalizedRecipes = {
   result: Result,
-  recipes: { [string]: RecipeSummary }
+  recipes: { [string]: RecipeSummary },
 }

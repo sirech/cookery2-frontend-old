@@ -7,7 +7,7 @@ import RecipeDetail from './RecipeDetail'
 // Mock thunk that triggers API request
 import { actions } from 'state/recipe'
 jest.mock('state/recipe/actions', () => ({
-  fetchRecipe: jest.fn(dispatch => jest.fn())
+  fetchRecipe: jest.fn(dispatch => jest.fn()),
 }))
 
 describe('components', () => {

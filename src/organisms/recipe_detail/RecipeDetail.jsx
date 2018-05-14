@@ -19,18 +19,18 @@ import type { RecipeDetail as RecipeDetailType } from 'types'
 type Props = {
   match: { params: { id?: string } },
   recipe: RecipeDetailType,
-  fetchRecipe: (string) => void
+  fetchRecipe: string => void,
 }
 
 class RecipeDetail extends React.Component {
   static defaultProps: Props
   props: Props
 
-  static getId (props) {
+  static getId(props) {
     return R.path(['match', 'params', 'id'], props)
   }
 
-  componentDidMount () {
+  componentDidMount() {
     const id = RecipeDetail.getId(this.props)
 
     if (id) {
@@ -38,7 +38,7 @@ class RecipeDetail extends React.Component {
     }
   }
 
-  componentWillUpdate (nextProps: Props) {
+  componentWillUpdate(nextProps: Props) {
     const id = RecipeDetail.getId(this.props)
     const newId = RecipeDetail.getId(nextProps)
 
@@ -47,7 +47,7 @@ class RecipeDetail extends React.Component {
     }
   }
 
-  render () {
+  render() {
     const { recipe } = this.props
 
     return (
@@ -61,8 +61,9 @@ class RecipeDetail extends React.Component {
 }
 
 export default connect(
-  (state, props) => createStructuredSelector({
-    recipe: recipeSelector
-  })(state),
+  (state, props) =>
+    createStructuredSelector({
+      recipe: recipeSelector,
+    })(state),
   R.pick(['fetchRecipe'])(actions)
 )(RecipeDetail)

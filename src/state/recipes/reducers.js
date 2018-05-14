@@ -2,11 +2,11 @@ import { REQUEST_RECIPES, RECEIVE_RECIPES } from './constants'
 
 const initialState = {
   entities: {
-    recipes: {}
-  }
+    recipes: {},
+  },
 }
 
-function recipes (state = initialState, action) {
+function recipes(state = initialState, action) {
   switch (action.type) {
     case REQUEST_RECIPES:
       return initialState

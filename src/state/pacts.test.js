@@ -31,16 +31,16 @@ describe('pacts', () => {
           method: 'GET',
           path: '/rest/recipes',
           headers: {
-            'Accept': 'application/json',
+            Accept: 'application/json',
             'Content-Type': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest'
-          }
+            'X-Requested-With': 'XMLHttpRequest',
+          },
         },
         willRespondWith: {
           status: 200,
           headers: { 'Content-Type': 'application/json; charset=utf-8' },
-          body: rest.recipes
-        }
+          body: rest.recipes,
+        },
       }
 
       return provider.addInteraction(interaction)
@@ -50,13 +50,15 @@ describe('pacts', () => {
     it('should dispatch the correct actions', () => {
       const expectedActions = [
         { type: 'recipes:request' },
-        { type: 'recipes:receive', payload: R.pick(['entities', 'result'])(recipes()) }
+        {
+          type: 'recipes:receive',
+          payload: R.pick(['entities', 'result'])(recipes()),
+        },
       ]
 
-      return store.dispatch(fetchRecipes())
-        .then(() => {
-          expect(store.getActions()).toEqual(expectedActions)
-        })
+      return store.dispatch(fetchRecipes()).then(() => {
+        expect(store.getActions()).toEqual(expectedActions)
+      })
     })
   })
 
@@ -69,16 +71,16 @@ describe('pacts', () => {
           method: 'GET',
           path: `/rest/recipes/${recipe().id}`,
           headers: {
-            'Accept': 'application/json',
+            Accept: 'application/json',
             'Content-Type': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest'
-          }
+            'X-Requested-With': 'XMLHttpRequest',
+          },
         },
         willRespondWith: {
           status: 200,
           headers: { 'Content-Type': 'application/json; charset=utf-8' },
-          body: rest.recipe
-        }
+          body: rest.recipe,
+        },
       }
 
       return provider.addInteraction(interaction)
@@ -88,13 +90,12 @@ describe('pacts', () => {
     it('should dispatch the correct actions', () => {
       const expectedActions = [
         { type: 'recipe:request' },
-        { type: 'recipe:receive', payload: recipe() }
+        { type: 'recipe:receive', payload: recipe() },
       ]
 
-      return store.dispatch(fetchRecipe(recipe().id))
-        .then(() => {
-          expect(store.getActions()).toEqual(expectedActions)
-        })
+      return store.dispatch(fetchRecipe(recipe().id)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions)
+      })
     })
   })
 })

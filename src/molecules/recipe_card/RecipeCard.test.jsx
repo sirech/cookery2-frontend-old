@@ -5,7 +5,15 @@ import RecipeCard from './RecipeCard'
 describe('components', () => {
   describe('RecipeCard', () => {
     it('renders correctly', () => {
-      const { component } = fullRender(<RecipeCard id={1} name='Stuff' difficulty='easy' servings={3} duration={120} />)
+      const { component } = fullRender(
+        <RecipeCard
+          id={1}
+          name="Stuff"
+          difficulty="easy"
+          servings={3}
+          duration={120}
+        />
+      )
       expect(component.toJSON()).toMatchSnapshot()
     })
   })

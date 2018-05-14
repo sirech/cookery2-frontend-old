@@ -16,36 +16,35 @@ import type { RecipeSummary } from 'types'
 
 type Props = {
   recipes: Array<RecipeSummary>,
-  fetchRecipes: (void) => void
+  fetchRecipes: void => void,
 }
 
 class RecipesList extends React.Component {
   props: Props
 
-  componentDidMount () {
+  componentDidMount() {
     this.props.fetchRecipes()
   }
 
-  renderRecipe (recipe) {
-    return (
-      <RecipeCard key={recipe.id} {...recipe} />
-    )
+  renderRecipe(recipe) {
+    return <RecipeCard key={recipe.id} {...recipe} />
   }
 
-  render () {
+  render() {
     const { recipes } = this.props
 
     return (
-      <Row tag='ul' className='list-unstyled'>
-        {recipes.map(recipe => this.renderRecipe(recipe)) }
+      <Row tag="ul" className="list-unstyled">
+        {recipes.map(recipe => this.renderRecipe(recipe))}
       </Row>
     )
   }
 }
 
 export default connect(
-  (state, props) => createStructuredSelector({
-    recipes: recipesSelector
-  })(state),
+  (state, props) =>
+    createStructuredSelector({
+      recipes: recipesSelector,
+    })(state),
   R.pick(['fetchRecipes'])(actions)
 )(RecipesList)

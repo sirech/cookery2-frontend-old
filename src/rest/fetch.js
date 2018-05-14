@@ -2,7 +2,7 @@
 
 import isoFetch from 'isomorphic-fetch'
 
-const testableUrl = (path) => {
+const testableUrl = path => {
   const TESTING = process.env.NODE_ENV === 'test'
   return `${TESTING ? 'http://localhost:8989' : ''}${path}`
 }
@@ -15,12 +15,12 @@ const fetch = (url: string, opts: Object = {}) => {
     headers: {
       Accept: 'application/json',
       'Content-type': 'application/json',
-      'X-Requested-With': 'XMLHttpRequest'
-    }
+      'X-Requested-With': 'XMLHttpRequest',
+    },
   }
 
-  const headers = {...DEFAULT_OPTIONS.headers, ...opts.headers}
-  const options = {...DEFAULT_OPTIONS, ...opts, ...{ headers }}
+  const headers = { ...DEFAULT_OPTIONS.headers, ...opts.headers }
+  const options = { ...DEFAULT_OPTIONS, ...opts, ...{ headers } }
 
   return isoFetch(prepareUrl(url), options)
 }

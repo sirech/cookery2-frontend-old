@@ -10,20 +10,21 @@ import './styles.css'
 import type { Step as StepType } from 'types'
 
 const renderStep = (step: StepType) => (
-  <ListGroupItem key={step.isRecipe ? step.name : step.description} className='step'>
+  <ListGroupItem
+    key={step.isRecipe ? step.name : step.description}
+    className="step"
+  >
     <Step {...step} />
   </ListGroupItem>
 )
 
 const Steps = ({ items }: { items: Array<StepType> }) => (
-  <Col xs='12' lg='6' className='mb-3'>
+  <Col xs="12" lg="6" className="mb-3">
     <Card>
       <CardHeader>
         <h6>Steps</h6>
       </CardHeader>
-      <ListGroup flush>
-        {items.map(step => renderStep(step))}
-      </ListGroup>
+      <ListGroup flush>{items.map(step => renderStep(step))}</ListGroup>
     </Card>
   </Col>
 )

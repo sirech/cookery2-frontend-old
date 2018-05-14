@@ -10,7 +10,7 @@ describe('recipes reducer', () => {
 
   it('handles REQUEST_RECIPES', () => {
     const action = {
-      type: REQUEST_RECIPES
+      type: REQUEST_RECIPES,
     }
 
     expect(recipes(recipesState(), action)).toMatchSnapshot()
@@ -19,7 +19,7 @@ describe('recipes reducer', () => {
   it('handles RECEIVE_RECIPES', () => {
     const action = {
       type: RECEIVE_RECIPES,
-      payload: recipesState()
+      payload: recipesState(),
     }
 
     expect(recipes(undefined, action)).toMatchSnapshot()
