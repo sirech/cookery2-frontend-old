@@ -19,8 +19,8 @@ export function fetchRecipe(id: number | string) {
   return (dispatch: Dispatch) => {
     dispatch(requestRecipe())
 
-    return fetch(`/recipes/${id}`)
-      .then(response => response.json())
-      .then(recipe => dispatch(receiveRecipe(recipe)))
+    return fetch(`/recipes/${id}`).then(response =>
+      dispatch(receiveRecipe(response.data))
+    )
   }
 }

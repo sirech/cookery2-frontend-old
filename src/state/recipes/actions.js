@@ -20,8 +20,7 @@ export function fetchRecipes() {
     dispatch(requestRecipes())
 
     return fetch('/recipes')
-      .then(response => response.json())
-      .then(json => normalizeRecipes(json))
+      .then(response => normalizeRecipes(response.data))
       .then(recipes => dispatch(receiveRecipes(recipes)))
   }
 }
