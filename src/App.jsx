@@ -11,6 +11,7 @@ import { Col, Container, Row } from 'reactstrap'
 import Header from 'molecules/header'
 import RecipeDetail from 'organisms/recipe_detail'
 import RecipesList from 'organisms/recipes_list'
+import RecipeForm from 'organisms/recipe_form'
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ const Content = () => (
     <Row>
       <Col xs="12">
         <Switch>
+          <Route exact path="/recipes/new" component={RecipeForm} />
           <Route exact path="/recipes/:id" component={RecipeDetail} />
           <Route exact path="/recipes" component={RecipesList} />
         </Switch>

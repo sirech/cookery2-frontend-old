@@ -21,9 +21,7 @@ type Props = {
 }
 
 // exported for testing
-export class Input extends React.Component {
-  props: Props
-
+export class Input extends React.Component<Props> {
   isValid() {
     const { valid, touched } = this.props
 

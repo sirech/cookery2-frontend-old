@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components RecipeForm renders correctly 1`] = `
+<Connect(Form)
+  model="form.recipe"
+  onSubmit={[Function]}
+>
+  <Connect(Input)
+    messages={
+      Object {
+        "length": "Name cannot be empty",
+      }
+    }
+    name="name"
+    placeholder="Awesome Recipe"
+    type="text"
+    validators={
+      Object {
+        "length": [Function],
+      }
+    }
+  />
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="difficulty"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      Difficulty
+    </Label>
+    <DefaultConnectedControl
+      component={[Function]}
+      id="difficulty"
+      model=".difficulty"
+      name="difficulty"
+      type="select"
+    >
+      <option
+        key="easy"
+      >
+        easy
+      </option>
+      <option
+        key="medium"
+      >
+        medium
+      </option>
+      <option
+        key="difficult"
+      >
+        difficult
+      </option>
+    </DefaultConnectedControl>
+  </FormGroup>
+  <Connect(Input)
+    messages={
+      Object {
+        "value": "It should be between 1 and 10",
+      }
+    }
+    name="servings"
+    type="number"
+    validators={
+      Object {
+        "value": [Function],
+      }
+    }
+  />
+  <Connect(Input)
+    messages={
+      Object {
+        "value": "It should be between 1 and 600",
+      }
+    }
+    name="duration"
+    type="number"
+    validators={
+      Object {
+        "value": [Function],
+      }
+    }
+  />
+  <Button
+    className="float-right"
+    color="primary"
+    tag="button"
+    type="submit"
+  >
+    Create Recipe
+  </Button>
+</Connect(Form)>
+`;
