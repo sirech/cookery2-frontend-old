@@ -157,6 +157,101 @@
           "duration": 0
         }
       }
+    },
+    {
+      "description": "a request to create a new recipe",
+      "providerState": "i am logged in",
+      "request": {
+        "method": "POST",
+        "path": "/rest/recipes",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+          "X-Requested-With": "XMLHttpRequest"
+        },
+        "body": {
+          "recipe": {
+            "quantities": [
+              {
+                "name": "sugar",
+                "unit": "grs",
+                "amount": 50
+              },
+              {
+                "name": "water",
+                "unit": "mls",
+                "amount": 1000
+              },
+              {
+                "name": "salt",
+                "unit": "pinch",
+                "amount": 1
+              }
+            ],
+            "steps": [
+              {
+                "isRecipe": false,
+                "description": "Mix all the ingredients"
+              },
+              {
+                "isRecipe": true,
+                "id": 16,
+                "name": "name name name"
+              }
+            ],
+            "name": "test name",
+            "servings": 2,
+            "difficulty": "easy",
+            "duration": 0
+          }
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "quantities": [
+            {
+              "name": "sugar",
+              "unit": "grs",
+              "amount": 50
+            },
+            {
+              "name": "water",
+              "unit": "mls",
+              "amount": 1000
+            },
+            {
+              "name": "salt",
+              "unit": "pinch",
+              "amount": 1
+            }
+          ],
+          "steps": [
+            {
+              "isRecipe": false,
+              "description": "Mix all the ingredients"
+            },
+            {
+              "isRecipe": true,
+              "id": 16,
+              "name": "name name name"
+            }
+          ],
+          "id": 1,
+          "name": "test name",
+          "servings": 2,
+          "difficulty": "easy",
+          "duration": 0
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
     }
   ],
   "metadata": {
