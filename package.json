@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.2.1",
     "eslint-config-react-app": "^2.1.0",
     "normalizr": "^3.2.3",
     "ramda": "^0.25.0",
